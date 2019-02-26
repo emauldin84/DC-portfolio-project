@@ -10,3 +10,53 @@ html {
 * {
     font-family: 'Lato', sans-serif;
 }
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    display: block;
+    background-image: url("/images/pexels-photo-1022218.jpeg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(2px);
+}
+
+.top-bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, .9);
+
+}
+.top-bar li,
+.top-bar h2,
+.nav-bar-name,
+.nav-items{
+    display: inline-block;
+}
+.top-bar a{
+    float: right;
+    padding: 0 8px;
+    text-decoration: none;   
+}
+.top-bar h2{
+    margin: 8px;
+}
+
+.nav-items{
+    float: right;
+}
+.call-to-action{
+    position: fixed;
+    margin: 0 auto;
+    z-index: 9999;
+}
