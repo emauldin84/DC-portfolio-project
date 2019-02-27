@@ -8,7 +8,7 @@ html {
 
 
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial,sans-serif;
 }
 
 .background {
@@ -44,6 +44,7 @@ html {
     z-index: 9999;
     background-color: rgba(0, 0, 0, .5);
     color: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid black;
 
 }
 .top-bar li,
@@ -54,18 +55,86 @@ html {
 }
 .top-bar a{
     float: right;
-    padding: 0 8px;
-    text-decoration: none;   
+    padding: 0 12px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);  
 }
 .top-bar h2{
     margin: 8px;
+    padding-top: 3px;
+    margin-left: 45px;
 }
 
 .nav-items{
     float: right;
+    margin-right: 35px;
 }
 .call-to-action{
     position: fixed;
-    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
     z-index: 9999;
+    color: rgba(255, 255, 255, .9);
+    
 }
+
+.main-name {
+    font-size: 40px;
+    font-weight: 300;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+    text-align: center;
+}
+.main-name h1 {
+    margin: 15px;
+}
+.main-name p{
+    font-size: 22px;
+}
+.last-name {
+    font-weight: bold;
+}
+.buttons{
+    text-align: center;
+}
+.buttons ul{
+    padding: 0;
+}
+/* .buttons li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 5px .25px;
+    text-align: center;
+    width: 120px;
+} */
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 5px .25px;
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+}
+
+.buttons a:hover {
+    background-color: white;
+    
+    color: rgb(20, 20, 20);
+}
+
+/* .buttons li:hover {
+    background-color: white;
+    
+    color: rgb(20, 20, 20);
+}  */
