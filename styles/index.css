@@ -1,11 +1,10 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
-  }
+}
   *, *:before, *:after {
     box-sizing: inherit;
-  }
-
+}
 
 * {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial,sans-serif;
@@ -23,7 +22,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(4px);
+    filter: blur(5px);
 }
 
 .background-overlay {
@@ -45,13 +44,19 @@ html {
     background-color: rgba(0, 0, 0, .5);
     color: rgba(255, 255, 255, .9);
     border-bottom: 1px solid black;
-
+    display: flex;
+}
+.top-bar ul {
+    float: right;
 }
 .top-bar li,
 .top-bar h2,
 .nav-bar-name,
 .nav-items{
     display: inline-block;
+}
+.nav-items {
+    display: flex;
 }
 .drop-down {
     float: right;
@@ -64,7 +69,7 @@ div .line3 {
     height: 2px;
     background-color: rgba(255, 255, 255, .9);
     margin: 6px 0;
-  }
+}
 
 @media screen and (min-width:600px) {
 .top-bar a{
@@ -84,8 +89,13 @@ div .line3 {
         text-decoration: none;
         color: rgba(255, 255, 255, .9); 
     }
+    .main-name h1 {
+        font-size: 40px;
+    }
+    .main-name p {
+        font-size: 18px;
+    }
 }
-
 
 .top-bar h2{
     margin: 8px;
@@ -120,16 +130,17 @@ div .line3 {
 .main-name h1 {
     margin: 15px;
 }
-.main-name p{
+.main-name p {
+    margin: 15px;
     font-size: 22px;
 }
 .last-name {
     font-weight: bold;
 }
-.buttons{
+.buttons {
     text-align: center;
 }
-.buttons ul{
+.buttons ul {
     padding: 0;
 }
 /* .buttons li {
