@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eric Mauldin</title>
+    <title>Eric Mauldin | Portfolio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
     
 </head>
 <body>
@@ -33,7 +33,7 @@
                         <ul class="nav navbar-left">
                             <a class="dropdown-item p-1"href="index.html">Home</a>
                             <a class="dropdown-item p-1"href="about.html">About</a>
-                            <a class="dropdown-item p-1"href="portfolio.html">Portfolio</a>
+                            <a class="dropdown-item p-1 active"href="portfolio.html">Portfolio</a>
                             <a class="dropdown-item p-1"href="mailto:emauldin84@gmail.com" target="_blank">Contact</a>
                         </ul>
                     </div>
@@ -41,32 +41,44 @@
                 
             </div>
         </div>
-        <main class="main">
+        <main class="main container row justify-content-center d-inline-flex">
             <div class="logo">
 
             </div>
-            <div class="call-to-action">
-                
-                <div class="main-name container">
-                    <h1>eric<span class="last-name">Mauldin</span></h1>
-                    <p>full-stack web development</p>
-                    <p>
-                            <span class="typer" data-words="html,css,javascript,node.js,express,postgreSQL " data-delay="100" data-deleteDelay="1000"></span>
-                            <span class="cursor" data-owner="main"></span>
-                    
-                    </p>
-
-
+            <!-- <div class="display-grid container row justify-content-center"> -->
+                <div class="display-grid">
+                <div class="display-grid-top row align-middle">
+                        <div class="card bg-transparent" style="width: 18rem;">
+                            <img class="card-img-top" src="./images/Screen Shot 2019-03-19 at 12.32.07 PM.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">MovieCloud</p>
+                            </div>
+                        </div>
+                        <div class="card bg-transparent" style="width: 18rem;">
+                                <img class="card-img-top" src="./images/random-item-sim.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">OMS</p>
+                                </div>
+                            </div>
                 </div>
-                <div class="buttons m-2">
-                    <ul>
-                        <a href="about.html" target="" class="p-2">About</a>
-                        <a href="portfolio.html" target="" class="p-2">Portfolio</a>
-                        <a href="mailto:emauldin84@gmail.com" target="_blank" class="p-2">Contact</a>
-                    </ul>
+                <div class="display-grid-bottom row">
+                        <div class="card bg-transparent" style="width: 18rem;">
+                                <img class="card-img-top" src="./images/Screen Shot 2019-04-17 at 2.04.22 PM.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Treasure Hunter</p>
+                                </div>
+                            </div>
+                            <div class="card bg-transparent" style="width: 18rem;">
+                                <img class="card-img-top" src="./images/Coming-Soon-placeholder-11.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text">Coming Soon!</p>
+                                </div>
+                            </div>
                 </div>
-
             </div>
+
+            <!-- </div> -->
+            
 
         </main>
 

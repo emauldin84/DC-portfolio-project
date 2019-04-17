@@ -16,7 +16,7 @@ html {
     right: 0;
     z-index: 0;
     display: block;
-    background-image: url("/images/pexels-photo-289649.jpeg");
+    background-image: url("/images/pexels-photo-1022218.jpeg");
     min-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,18 +143,6 @@ div .line3 {
     float: right;
     margin-right: 35px;
 }
-.call-to-action{
-    position: fixed;
-    width: 500px;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -250px;
-    z-index: 9999;
-    color: rgba(255, 255, 255, .9);
-    
-}
 
 .main-name {
     font-size: 40px;
@@ -173,9 +161,6 @@ div .line3 {
 .last-name {
     font-weight: bold;
 }
-.typer {
-    color: white !important;
-}
 .buttons {
     text-align: center;
 }
@@ -187,6 +172,7 @@ div .line3 {
     text-decoration: none;
     border: 1px solid white;
     padding: 10px 20px;
+    
     margin: 5px .25px;
     text-align: center;
     width: 120px;
@@ -208,4 +194,33 @@ div .line3 {
     background-color: white;
     
     color: rgb(20, 20, 20);
+}
+
+.display-grid {
+    /* position: fixed; */
+    z-index: 9999;
+    margin-top: 100px;
+
+}
+.display-grid-top{
+    
+    /* height: 200px; */
+    /* top: 50%;
+    left: 50%; */
+
+    z-index: 9999;
+    color: rgba(255, 255, 255, .9);
+    
+}
+.display-grid-bottom{
+
+    /* height: 200px;
+    top: 50%;
+    left: 50%; */
+    z-index: 9999;
+    color: rgba(255, 255, 255, .9);
+    
+}
+.card-body {
+    background-color: rgba(0, 0, 0, .5) !important;
 }
