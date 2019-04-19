@@ -21,7 +21,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(5px);
+    filter: blur(3px);
 }
 
 .background-overlay {
@@ -53,6 +53,9 @@ html {
 .nav-bar-name,
 .nav-items{
     display: inline-block;
+}
+.nav-bar-name:hover {
+    cursor: pointer;
 }
 .name {
     font-size: 2em !important;
@@ -112,6 +115,7 @@ div .line3 {
 .buttons a {
     width: 90px;
 }
+
 }
 
 @media screen and (max-width:599px) {
@@ -131,6 +135,7 @@ div .line3 {
     .buttons a {
         width: 90px !important;
     }
+
 }
 
 .top-bar h2{
@@ -146,7 +151,7 @@ div .line3 {
 .call-to-action{
     position: fixed;
     width: 500px;
-    height: 200px;
+    /* height: 200px; */
     top: 50%;
     left: 50%;
     margin-top: -100px;
