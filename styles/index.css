@@ -152,7 +152,7 @@ div .line3 {
     position: fixed;
     width: 500px;
     /* height: 200px; */
-    top: 50%;
+    top: 45%;
     left: 50%;
     margin-top: -100px;
     margin-left: -250px;
@@ -213,4 +213,28 @@ div .line3 {
     background-color: white;
     
     color: rgb(20, 20, 20);
+}
+
+.footer {
+    min-width: 100%;
+    min-height: 5%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .5) !important;
+    filter: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0 !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999 !important;
+    
+}
+.icons {
+    align-self: left;
+    height: 30px;
+
+    padding: 0;
+    margin: 0 15px;
+    filter: invert(100%) !important;
 }
