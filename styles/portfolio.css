@@ -29,7 +29,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .3);
     min-height: 100%;
 }
 
@@ -257,6 +257,22 @@ div .line3 {
     cursor: pointer;
     
 }
+.video-frame {
+    height: 245px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.video {
+    width: 300px;
+    height: auto;
+    opacity: 0.7;
+}
+.video:hover {
+    opacity: 1.0;
+}
 
 .card-text {
     text-decoration: none !important;
@@ -270,10 +286,11 @@ div .line3 {
 
 .footer {
     min-width: 100%;
-    min-height: 5%;
+    min-height: 6%;
     display: flex;
     background-color: rgba(0, 0, 0, .5) !important;
-    filter: 5px;
+    border-top: 1px solid black;
+    /* filter: 5px; */
     position: absolute;
     left: 0;
     right: 0;
@@ -291,3 +308,12 @@ div .line3 {
     margin: 0 15px;
     filter: invert(100%) !important;
 }
+
+/* #THModal {
+    z-index: 999999999999999 !important;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    max-width: 30%;
+} */
+

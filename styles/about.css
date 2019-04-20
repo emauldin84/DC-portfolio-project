@@ -1,0 +1,263 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    display: block;
+    background-image: url("/images/cloud-formation-clouds-cumulus-2130879.jpg");
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(3px);
+}
+
+.background-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+    min-height: 100%;
+}
+
+.top-bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid black;
+    display: flex;
+}
+.top-bar ul {
+    float: right;
+}
+.top-bar li,
+.top-bar h2,
+.nav-bar-name,
+.nav-items{
+    display: inline-block;
+}
+.nav-bar-name:hover {
+    cursor: pointer;
+}
+.name {
+    font-size: 2em !important;
+}
+.nav-items {
+    display: flex;
+}
+.dropdown {
+    float: right;
+    border: none;
+    background: none;
+}
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    
+}
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    box-shadow:none;
+}
+.dropdown-menu {
+    background: rgba(0, 0, 0, .5) !important;
+    border: 1px solid black;
+    border-radius: 0 !important;
+    top: 3px !important;
+    /* min-width: 100% !important; */
+    /* left: 5px !important; */
+}
+.dropdown-menu a{
+    background: none !important;
+    color: white !important;
+    
+
+}
+.dropdown-toggle::after {
+    display:none;
+}
+
+div .line1,
+div .line2,
+div .line3 {
+    width: 30px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .9);
+    margin: 6px 0;
+}
+
+@media screen and (min-width:600px) {
+.top-bar a{
+    float: right;
+    padding: 0 12px;
+    margin-right: 8px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);  
+}
+.buttons a {
+    width: 90px;
+}
+
+}
+
+@media screen and (max-width:599px) {
+    .top-bar a{
+        /* display: inline; */
+        padding: 0 12px;
+        margin-right: 8px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .9); 
+    }
+    .main-name h1 {
+        font-size: 40px;
+    }
+    .main-name p {
+        font-size: 18px;
+    }
+    .buttons a {
+        width: 90px !important;
+    }
+
+}
+
+.top-bar h2{
+    margin: 8px;
+    padding-top: 3px;
+    margin-left: 45px;
+}
+
+.nav-items{
+    float: right;
+    margin-right: 35px;
+}
+.call-to-action{
+    position: fixed;
+    width: 500px;
+    /* height: 200px; */
+    top: 45%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    z-index: 9999;
+    color: rgba(255, 255, 255, .9);
+    
+}
+
+.main-name {
+    font-size: 40px;
+    font-weight: 300;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+    text-align: center;
+}
+.main-name h1 {
+    margin: 15px;
+}
+.main-name p {
+    margin: 15px;
+    font-size: 22px;
+}
+.last-name {
+    font-weight: bold;
+}
+.typer {
+    color: white !important;
+}
+.buttons {
+    text-align: center;
+}
+.buttons ul {
+    padding: 0;
+}
+/* .buttons li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 5px .25px;
+    text-align: center;
+    width: 120px;
+} */
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 5px .25px;
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+}
+
+.buttons a:hover {
+    background-color: white;
+    
+    color: rgb(20, 20, 20);
+}
+
+.footer {
+    min-width: 100%;
+    min-height: 6%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .5) !important;
+    border-top: 1px solid black;
+    filter: 5px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0 !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 99 !important;
+    
+}
+.icons {
+    align-self: left;
+    height: 30px;
+
+    padding: 0;
+    margin: 0 15px;
+    filter: invert(100%) !important;
+}
+
+.about-container {
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5) !important;
+    top: 100px;
+    width: auto;
+    z-index: 9 !important;
+}
+.photo {
+    width: auto;
+    height: 200px;
+    margin: 30px;
+
+    border-radius: 50%;
+    z-index: 99 !important;
+    border: 2px rgba(255, 255, 255) solid;
+}
+.about-me {
+    color: rgb(255, 255, 255);
+}
+
