@@ -96,6 +96,11 @@ html {
     display:none;
     z-index: 1000000 !important;
 }
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, .5) !important;
+    width: 100%;
+}
+
 
 div .line1,
 div .line2,
@@ -203,7 +208,7 @@ div .line3 {
 
 .display-grid {
     /* position: fixed; */
-    z-index: 9999;
+    z-index: 4;
     margin-top: 70px;
 
     height: 100% !important;
