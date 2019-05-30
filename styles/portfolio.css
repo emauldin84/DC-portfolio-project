@@ -1,6 +1,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    background-color: black;
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -16,7 +17,7 @@ html {
     right: 0;
     z-index: 0;
     display: block;
-    background-image: url("/images/4k-wallpaper-beach-hd-wallpaper-2120101.jpg");
+    background-image: url("/images/compressed-4k-wallpaper-beach-hd-wallpaper-2120101 copy.jpg");
     min-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
