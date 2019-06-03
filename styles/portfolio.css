@@ -1,7 +1,9 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
-html {
+
+html, body {
     box-sizing: border-box;
     background-color: black;
+    height: 100%;
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -134,12 +136,6 @@ div .line3 {
         text-decoration: none;
         color: rgba(255, 255, 255, .9); 
     }
-    .main-name h1 {
-        font-size: 40px;
-    }
-    .main-name p {
-        font-size: 18px;
-    }
     .buttons a {
         width: 90px !important;
     }
@@ -156,23 +152,7 @@ div .line3 {
     margin-right: 35px;
 }
 
-.main-name {
-    font-size: 40px;
-    font-weight: 300;
-    border-top: 1px dashed white;
-    border-bottom: 1px dashed white;
-    text-align: center;
-}
-.main-name h1 {
-    margin: 15px;
-}
-.main-name p {
-    margin: 15px;
-    font-size: 22px;
-}
-.last-name {
-    font-weight: bold;
-}
+
 .buttons {
     text-align: center;
 }
@@ -234,6 +214,15 @@ div .line3 {
     color: rgb(255, 255, 255);
     
 }
+.main-parent {
+    min-height: 100%;
+}
+.main {
+    min-height: 100%;
+}
+.secondary{
+    min-height: 100%;
+}
 .card-body {
     background-color: rgba(0, 0, 0, .5) !important;
     width: 100%;
@@ -293,18 +282,19 @@ div .line3 {
 
 .footer {
     min-width: 100%;
-    min-height: 6%;
+    min-height: 50px;
     display: flex;
     background-color: rgba(0, 0, 0, .5) !important;
     border-top: 1px solid black;
     /* filter: 5px; */
-    position: absolute;
+    position: sticky;
     left: 0;
     right: 0;
     /* bottom: 0 !important; */
     justify-content: center;
     align-items: center;
     z-index: 99999999 !important;
+    flex-shrink: 0;
     
 }
 .icons {
