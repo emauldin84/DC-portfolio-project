@@ -4,6 +4,7 @@ html, body {
     box-sizing: border-box;
     background-color: black;
     height: 100%;
+    margin: 0;
 }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -139,6 +140,9 @@ div .line3 {
     .buttons a {
         width: 90px !important;
     }
+    .footer {
+        margin-top: 50px;
+    }
 }
 
 .top-bar h2{
@@ -216,12 +220,16 @@ div .line3 {
 }
 .main-parent {
     min-height: 100%;
+    margin-bottom: -50px;
 }
 .main {
-    min-height: 100%;
+    /* min-height: 100%; */
 }
 .secondary{
-    min-height: 100%;
+    /* min-height: 100%; */
+}
+.push {
+    height: 50px;
 }
 .card-body {
     background-color: rgba(0, 0, 0, .5) !important;
@@ -282,19 +290,19 @@ div .line3 {
 
 .footer {
     min-width: 100%;
-    min-height: 50px;
+    height: 50px;
+    /* margin-top: 50px; */
     display: flex;
     background-color: rgba(0, 0, 0, .5) !important;
     border-top: 1px solid black;
     /* filter: 5px; */
-    position: sticky;
+    position: relative;
     left: 0;
     right: 0;
     /* bottom: 0 !important; */
     justify-content: center;
     align-items: center;
     z-index: 99999999 !important;
-    flex-shrink: 0;
     
 }
 .icons {

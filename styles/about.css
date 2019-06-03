@@ -141,6 +141,9 @@ div .line3 {
     .buttons a {
         width: 90px !important;
     }
+    .push {
+        height: 50px;
+    }
 
 }
 
@@ -276,11 +279,13 @@ div .line3 {
         .about-container{
             width:80%;
             left: 10%;
+            top: 5%;
     
         }
         .photo {
             height: 120px;
         }
+        
     
     }
 
